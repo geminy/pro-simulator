@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Hardkey</class>
+ <widget class="QWidget" name="Hardkey">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>480</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Hardkey</string>
+  </property>
+  <property name="toolTip">
+   <string>Hardkey</string>
+  </property>
+  <property name="statusTip">
+   <string>Hardkey</string>
+  </property>
+  <property name="whatsThis">
+   <string>Hardkey</string>
+  </property>
+  <widget class="QTabWidget" name="hardkeyTab">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>480</width>
+     <height>480</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="number">
+    <attribute name="title">
+     <string>Number</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="alphabet">
+    <attribute name="title">
+     <string>Alphabet</string>
+    </attribute>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

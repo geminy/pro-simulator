@@ -1,0 +1,69 @@
+#ifndef INFOWIDGET_H
+#define INFOWIDGET_H
+
+#include "ui_info.h"
+
+#include <QWidget>
+
+class InfoWidget : public QWidget, private Ui::Info
+{
+    Q_OBJECT
+
+public:
+    enum INFOILLUMIDATA
+    {
+        INFOILLUMIDATA_BYTE_HEAD_FIXED = 16,
+        INFOILLUMIDATA_BYTE_STATE = 1,
+        INFOILLUMIDATA_BYTE_LEVEL = 1,
+        INFOILLUMIDATA_BYTE_DRIVE = 1,
+        INFOILLUMIDATA_BYTE_TAIL_NULL = 19,
+        INFOILLUMIDATA_BYTE_SPEED = 1,
+        INFOILLUMIDATA_BYTE_BRAKE = 1,
+        INFOILLUMIDATA_BYTE_CHECKSUM = 1,
+        INFOILLUMIDATA_BYTE_TAIL_FIXED = 2,
+        INFOILLUMIDATA_BYTE_TOTAL_SUM = 43,
+
+        INFOILLUMIDATA_INDEX_STATE = 16,
+        INFOILLUMIDATA_INDEX_LEVEL = 17,
+        INFOILLUMIDATA_INDEX_DRIVE = 18,
+        INFOILLUMIDATA_INDEX_SPEED = 38,
+        INFOILLUMIDATA_INDEX_PARK = 39,
+        INFOILLUMIDATA_INDEX_CHECKSUM = 40,
+        INFOILLUMIDATA_INDEX_CHECKSUM_BEGIN = 2,
+        INFOILLUMIDATA_INDEX_CHECKSUM_END = 39
+    };
+
+    enum INFOREVDATA
+    {
+        INFOREVDATA_BYTE_HEAD_FIXED = 15,
+        INFOREVDATA_BYTE_REV = 1,
+        INFOREVDATA_BYTE_MID_NULL = 1,
+        INFOREVDATA_BYTE_SPEED = 1,
+        INFOREVDATA_BYTE_TAIL_NULL = 20,
+        INFOREVDATA_BYTE_CHECKSUM = 1,
+        INFOREVDATA_BYTE_TAIL_FIXED = 2,
+        INROREVDATA_BYTE_TOTALSUM = 41,
+
+        INFOREVDATA_INDEX_REV = 15,
+        INFOREVDATA_INDEX_SPEED = 17,
+        INFOREVDATA_INDEX_CHECKSUM = 38,
+        INFOREVDATA_INDEX_CHECKSUM_BEGIN = 2,
+        INFOREVDATA_INDEX_CHECKSUM_END = 37
+    };
+
+    explicit InfoWidget(QWidget *parent);
+    ~InfoWidget();
+
+private:
+    void initInfoData();
+
+private slots:
+    void on_illumiOkBtn_clicked();
+    void on_revOkBtn_clicked();
+
+private:
+    char m_illumiData[INFOILLUMIDATA_BYTE_TOTAL_SUM + 1];
+    char m_revData[INROREVDATA_BYTE_TOTALSUM + 1];
+};
+
+#endif // INFOWIDGET_H

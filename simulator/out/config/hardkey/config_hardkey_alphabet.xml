@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simulator type="hardkey">
+	<hardkey name="Alphabet" count="26" automode="" byte="1" base="16">
+		<key value="A" byte="01" x="10" y="10" width="100" height="100"/>
+		<key value="B" byte="02" x="120" y="60" width="50" height="50"/>
+		<key value="C" byte="03" x="180" y="60" width="50" height="50"/>
+		<key value="D" byte="04" x="240" y="60" width="50" height="50"/>
+		<key value="E" byte="05" x="60" y="120" width="50" height="50"/>
+		<key value="F" byte="06" x="120" y="120" width="50" height="50"/>
+		<key value="G" byte="07" x="180" y="120" width="50" height="50"/>
+		<key value="H" byte="08" x="240" y="120" width="50" height="50"/>
+		<key value="I" byte="09" x="60" y="180" width="50" height="50"/>
+		<key value="J" byte="0A" x="120" y="180" width="50" height="50"/>
+		<key value="K" byte="0B" x="180" y="180" width="50" height="50"/>
+		<key value="L" byte="0C" x="240" y="180" width="50" height="50"/>
+		<key value="M" byte="0D" x="60" y="240" width="50" height="50"/>
+		<key value="N" byte="0E" x="120" y="240" width="50" height="50"/>
+		<key value="O" byte="0F" x="180" y="240" width="50" height="50"/>
+		<key value="P" byte="10" x="240" y="240" width="50" height="50"/>
+		<key value="Q" byte="11" x="60" y="300" width="50" height="50"/>
+		<key value="R" byte="12" x="120" y="300" width="50" height="50"/>
+		<key value="S" byte="13" x="180" y="300" width="50" height="50"/>
+		<key value="T" byte="14" x="240" y="300" width="50" height="50"/>
+		<key value="U" byte="15" x="60" y="360" width="50" height="50"/>
+		<key value="V" byte="16" x="120" y="360" width="50" height="50"/>
+		<key value="W" byte="17" x="180" y="360" width="50" height="50"/>
+		<key value="X" byte="18" x="240" y="360" width="50" height="50"/>
+		<key value="Y" byte="18" x="300" y="360" width="50" height="50"/>
+		<key value="Z" byte="1A" x="360" y="360" width="50" height="50"/>
+	</hardkey>
+</simulator>

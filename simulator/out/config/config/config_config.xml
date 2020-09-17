@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simulator type="config">
+	<location byte="1" base="2">
+		<region hkey="0000" value="Japan"/>
+		<region hkey="0001" value="North America">
+			<subregion lkey="0000" value="America"/>
+			<subregion lkey="0001" value="Canada"/>
+			<subregion lkey="0010" value="Mexico"/>
+		</region>
+		<region hkey="0010" value="Europe"/>
+		<region hkey="0011" value="Russia"/>
+		<region hkey="0100" value="China"/>
+		<region hkey="0101" value="Oceania"/>
+		<region hkey="0110" value="Korea"/>
+		<region hkey="0111" value="Taiwan China"/>
+		<region hkey="1000" value="Middle East/Near East/North Africa">
+			<subregion lkey="0000" value="Middle East/Near East/North Africa"/>
+			<subregion lkey="0001" value="Middle East/Near East"/>
+			<subregion lkey="0010" value="North Africa"/>
+		</region>
+		<region hkey="1001" value="Central America/South America">
+			<subregion lkey="0000" value="Central America/Souch America"/>
+			<subregion lkey="0001" value="Central America"/>
+			<subregion lkey="0010" value="Souch America"/>
+		</region>
+		<region hkey="1010" value="South Africa"/>
+		<region hkey="1011" value="Southeast Asia">
+			<subregion lkey="0000" value="Southeast Aisa"/>
+			<subregion lkey="0001" value="Thailand"/>
+		</region>
+		<region hkey="1100" value="South Asia"/>
+		<region hkey="1101" value="Hongkong China/Macao China"/>
+	</location>
+	<model byte="1" base="16">
+		<system key="00" value="HighGrade"/>
+		<system key="01" value="Standard"/>
+		<system key="02" value="DisplayAudio"/>
+		<system key="03" value="EMV Audio"/>
+		<system key="10" value="Lexus DA"/>
+		<system key="20" value="Deluxe(D0)"/>
+		<system key="21" value="Deluxe(D4)"/>
+		<system key="22" value="Base(D4)"/>
+		<system key="23" value="Base(D0)"/>
+		<system key="24" value="General"/>
+		<system key="30" value="2Tuner"/>
+		<system key="31" value="1Tuner"/>
+		<system key="40" value="PSA"/>
+		<system key="41" value="SCION"/>
+	</model>
+</simulator>
